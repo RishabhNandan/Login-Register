@@ -1,10 +1,10 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    const studentname = document.getElementById('studentId').value;
+    const studentID = document.getElementById('studentId').value;
     const password = document.getElementById('password').value;
 
     // Check if student exists in the system
-    if (studentName === '12345' && password === 'password') {
+    if (studentID === '12345' && password === 'password') {
         document.getElementById('message').innerText = 'Welcome, student!';
     } else {
         document.getElementById('message').innerText = 'Yad aa rhi to sab se chup k Babu ko call car lo hmm nhi Batai ge/gi kisi Se ';
