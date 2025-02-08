@@ -18,7 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (studentId === '12345' && password === 'password') {
         showPopup('Welcome, student!');
     } else {
-        showPopup('Invalid ID or password.');
+        showPopup('Aare To Jao Mil aao Jhuth Bol k roommet Se.');
     }
 });
 
@@ -28,5 +28,5 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const newPassword = document.getElementById('newPassword').value;
 
     // Register the new student
-    showPopup(`Mr/Miss ${newStudentId}, you have been registered successfully!`);
+    showPopup(`Mr/Miss ${newStudentId}, Miss kae rhi Na Velentine Par Unko!`);
 });
