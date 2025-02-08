@@ -1,13 +1,13 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    const studentid = document.getElementById('studentId').value;
+    const studentId = document.getElementById('studentId').value;
     const password = document.getElementById('password').value;
 
     // Check if student exists in the system
-    if (studentID === '12345' && password === 'password') {
+    if (studentId === '12345' && password === 'password') {
         document.getElementById('message').innerText = 'Welcome, student!';
     } else {
-        document.getElementById('message').innerText = 'Yad aa rhi to sab se chup k Babu ko call car lo hmm nhi Batai ge/gi kisi Se ';
+        document.getElementById('message').innerText = 'Yaad aa rahi to Babu,Sona ko call car lo kisi ko nahi batau ga';
     }
 });
 
@@ -17,7 +17,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const newPassword = document.getElementById('newPassword').value;
 
     // Register the new student
-    document.getElementById('registerMessage').innerText = `Ka Ho ${newStudentId} Ka Hal ba kam se kam  collage Chali jati`;
+    document.getElementById('registerMessage').innerText = `Aur ${newStudentId} Kay hal hai Kahe Akle baithe ho kam se km khi ghum aate`;
 });
 
 function showRegister() {
