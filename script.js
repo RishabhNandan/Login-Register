@@ -1,13 +1,24 @@
+// Function to show the pop-up with a message
+function showPopup(message) {
+    document.getElementById('popupMessage').innerText = message;
+    document.getElementById('popup').classList.add('show');
+}
+
+// Function to close the pop-up
+function closePopup() {
+    document.getElementById('popup').classList.remove('show');
+}
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();    
+    event.preventDefault();    
     const studentId = document.getElementById('studentId').value;
     const password = document.getElementById('password').value;
 
     // Check if student exists in the system
     if (studentId === '12345' && password === 'password') {
-        document.getElementById('message').innerText = 'Welcome, student!';
+        showPopup('Welcome, student!');
     } else {
-        document.getElementById('message').innerText = 'Kar Lo Baat Adity Se Kahe Sarma Rhi  ';
+        showPopup('Invalid ID or password.');
     }
 });
 
@@ -17,9 +28,5 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const newPassword = document.getElementById('newPassword').value;
 
     // Register the new student
-    document.getElementById('registerMessage').innerText = `Mr/Miss ${newStudentId} Yad aa rhi na Uski Velentine day Par`;
+    showPopup(`Mr/Miss ${newStudentId}, you have been registered successfully!`);
 });
-
-function showRegister() {
-    document.getElementById('registerContainer').style.display = 'block';
-}
