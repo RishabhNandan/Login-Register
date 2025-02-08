@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (studentId === '12345' && password === 'password') {
         document.getElementById('message').innerText = 'Welcome, student!';
     } else {
-        document.getElementById('message').innerText = 'We are Sorry! you are not A student of This college';
+        document.getElementById('message').innerText = 'Aaine me dekh liye ho to Ek bar sabun se muh dhul bhi liye hote ';
     }
 });
 
@@ -17,7 +17,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const newPassword = document.getElementById('newPassword').value;
 
     // Register the new student
-    document.getElementById('registerMessage').innerText = `Student ${newStudentId} Aaine me muh dekh k aao`;
+    document.getElementById('registerMessage').innerText = `Mr/Miss ${newStudentId} Aaine me muh dekh k aao`;
 });
 
 function showRegister() {
