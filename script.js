@@ -17,7 +17,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const newPassword = document.getElementById('newPassword').value;
 
     // Register the new student
-    document.getElementById('registerMessage').innerText = `Ka Ho ${newStudentId} Ka Hal ba kam se kam Velentine p collage Chali jati`;
+    document.getElementById('registerMessage').innerText = `Ka Ho ${newStudentId} Ka Hal ba kam se kam  collage Chali jati`;
 });
 
 function showRegister() {
