@@ -53,6 +53,36 @@ button:hover {
 p {
     margin-top: 10px;
 }
+/* Add this CSS for the pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
 
 a {
     color: #5cb85c;
