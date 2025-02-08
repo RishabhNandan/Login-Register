@@ -1,5 +1,5 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+        event.preventDefault();    
     const studentId = document.getElementById('studentId').value;
     const password = document.getElementById('password').value;
 
