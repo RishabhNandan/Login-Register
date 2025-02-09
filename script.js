@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (studentId === '12345' && password === 'password') {
         document.getElementById('message').innerText = 'Welcome, student!';
     } else {
-        document.getElementById('message').innerText = 'Yaad aa rahi to Babu,Sona ko call car lo kisi ko nahi batau ga';
+        document.getElementById('message').innerText = 'Good Morning Ji Chhah Pe lo 🍵';
     }
 });
 
