@@ -12,7 +12,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); 
     const newStudentId = document.getElementById('newStudentId').value;
     const newPassword = document.getElementById('newPassword').value;
 
